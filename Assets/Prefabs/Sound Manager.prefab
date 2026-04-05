@@ -1,0 +1,153 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7388877556739857758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3194719762344797691}
+  - component: {fileID: 4450684058220860506}
+  m_Layer: 0
+  m_Name: Sound Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3194719762344797691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7388877556739857758}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4450684058220860506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7388877556739857758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a37fd152f9991408696f6235ca2d70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEnabled: 1
+  playRetriggerDelay: 0.08
+  sounds:
+  - soundName: Button
+    sound: 0
+    audioClip:
+    - {fileID: 8300000, guid: 91c921003e9653d4eb2e0a424df98155, type: 3}
+    - {fileID: 8300000, guid: c6d1880fd982e6d4fbb04e1b1741ed3c, type: 3}
+    - {fileID: 8300000, guid: 4c7687c4658ef294e98ed680bf704b64, type: 3}
+    playOrdered: 0
+    cooldown: 0
+    volume: 1
+    playedIndex: 0
+    deltaCooldown: 0
+  - soundName: Coin
+    sound: 1
+    audioClip:
+    - {fileID: 8300000, guid: 78b98ef9cebab72469871bc837263668, type: 3}
+    playOrdered: 0
+    cooldown: 0
+    volume: 0.5
+    playedIndex: 0
+    deltaCooldown: 0
+  - soundName: ItemAdd
+    sound: 2
+    audioClip:
+    - {fileID: 8300000, guid: 24431abb7def68f428e37af3d30b2e71, type: 3}
+    - {fileID: 8300000, guid: cba03f3063b8f6c4f84a55905276a85e, type: 3}
+    playOrdered: 0
+    cooldown: 0
+    volume: 0.5
+    playedIndex: 0
+    deltaCooldown: 0
+  - soundName: AmmoAdd
+    sound: 3
+    audioClip:
+    - {fileID: 8300000, guid: 24431abb7def68f428e37af3d30b2e71, type: 3}
+    - {fileID: 8300000, guid: cba03f3063b8f6c4f84a55905276a85e, type: 3}
+    playOrdered: 0
+    cooldown: 0
+    volume: 0.5
+    playedIndex: 0
+    deltaCooldown: 0
+  - soundName: Shoot
+    sound: 4
+    audioClip:
+    - {fileID: 8300000, guid: 24431abb7def68f428e37af3d30b2e71, type: 3}
+    - {fileID: 8300000, guid: cba03f3063b8f6c4f84a55905276a85e, type: 3}
+    playOrdered: 0
+    cooldown: 0
+    volume: 0.5
+    playedIndex: 0
+    deltaCooldown: 0
+  - soundName: Error
+    sound: 5
+    audioClip:
+    - {fileID: 8300000, guid: 64534d80d703ac045a5d621eee9b0628, type: 3}
+    playOrdered: 0
+    cooldown: 0
+    volume: 1
+    playedIndex: 0
+    deltaCooldown: 0
+  - soundName: PopupOpen
+    sound: 6
+    audioClip:
+    - {fileID: 8300000, guid: bea5e647d2b330342b58a1c59756575e, type: 3}
+    playOrdered: 0
+    cooldown: 0
+    volume: 1
+    playedIndex: 0
+    deltaCooldown: 0
+  - soundName: PopupClose
+    sound: 7
+    audioClip:
+    - {fileID: 8300000, guid: bea5e647d2b330342b58a1c59756575e, type: 3}
+    playOrdered: 0
+    cooldown: 0
+    volume: 1
+    playedIndex: 0
+    deltaCooldown: 0
+  - soundName: SlotUnlock
+    sound: 8
+    audioClip:
+    - {fileID: 8300000, guid: d9837c359bae6ac4492c578f419d9786, type: 3}
+    playOrdered: 0
+    cooldown: 0
+    volume: 1
+    playedIndex: 0
+    deltaCooldown: 0
+  - soundName: DragDrop
+    sound: 9
+    audioClip:
+    - {fileID: 8300000, guid: 64534d80d703ac045a5d621eee9b0628, type: 3}
+    playOrdered: 0
+    cooldown: 0
+    volume: 1
+    playedIndex: 0
+    deltaCooldown: 0
+  - soundName: DeleteItem
+    sound: 10
+    audioClip:
+    - {fileID: 8300000, guid: 64534d80d703ac045a5d621eee9b0628, type: 3}
+    playOrdered: 0
+    cooldown: 0
+    volume: 1
+    playedIndex: 0
+    deltaCooldown: 0
